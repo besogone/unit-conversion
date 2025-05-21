@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+		<title>Конвертер единиц</title>
+		
+	</head>
+	<body>
+		<header>
+			<h1>Конвертер метрических / имперских единиц</h1>
+			<div class="input-convert">
+				<input type="text" id="input-value" value="1">
+				<button id="convert-btn" onclick="convertValues()">Конвертировать</button>
+			</div>
+		</header>
+		<div id="main">
+			<div class="metric-container">
+				<h2>Длина (Метры/Футы)</h2>
+				<p id="length-el">1 метр = 3.281 фут | 1 фут = 0.305 метр</p>
+			</div>
+			<div class="metric-container">
+				<h2>Объём (Литры/Галлоны)</h2>
+				<p id="volume-el">1 литр = 0.264 галлон | 1 галлон = 3.788 литр</p>
+			</div>
+			<div class="metric-container">
+				<h2>Масса (Килограммы/Фунты)</h2>
+				<p id="mass-el">1 килограмм = 2.204 фунт | 1 фунт = 0.454 килограмм</p>
+			</div>
+		</div>
+		<script src="index.js"></script>		
+	</body>
+</html>
